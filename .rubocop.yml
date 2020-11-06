@@ -2,6 +2,7 @@ AllCops:
   Exclude:
     - "Guardfile"
     - "Rakefile"
+    - "spec/mocks/*"
 
   DisplayCopNames: true
 
