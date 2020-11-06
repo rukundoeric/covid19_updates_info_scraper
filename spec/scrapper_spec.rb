@@ -38,8 +38,8 @@ RSpec.describe Scraper do
         .set_output_filename(output_filename)
         .scrap
         .save
-      file = File.read(res.output_filename)
-      expect(res.is_a?(Scraper)).to eq(true)
+      file = File.read(output_filename)
+      expect(res['status']).to eq(201)
       expect(JSON.parse(file).is_a?(Array)).to eq(true)
     end
   end
