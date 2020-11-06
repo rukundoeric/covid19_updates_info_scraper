@@ -22,7 +22,7 @@ when '--list'
   end
 when '--update-informations'
   puts covid_info.update_information
-when '--help' then
+when '--help'
   puts '**************************************************************************************************'
   puts '*                                                                                                *'
   puts "*\tcovid --update-informations                                                         *"

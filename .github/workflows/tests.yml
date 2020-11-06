@@ -13,6 +13,8 @@ jobs:
           ruby-version: 2.6.x
       - name: Setup Bundler
           run:  gem install bundler:2.1.4
+      - name: Setup nokogiri
+          run: gem install nokogiri
       - name: Setup RSpec
         run: |
           [ -f Gemfile ] && bundle --deployment
