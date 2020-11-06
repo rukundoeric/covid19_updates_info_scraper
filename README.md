@@ -2,7 +2,7 @@
 
 #  Covid19-Updates-Info (Scraper)
 
-This is tool will help you to scrap covid19 updates information from [worldometers](https://www.worldometers.info/coronavirus/) and store them in a json file where you can be able to interact with them very easy. 
+This tool will help you to scrap covid19 updates information from [worldometers](https://www.worldometers.info/coronavirus/) and store them in a json file where you can be able to interact with them very easy. 
 
 
 ## Built With
