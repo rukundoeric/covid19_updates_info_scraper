@@ -78,7 +78,6 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- I would like to thank Cindy Shin for providing the sketch Design of this project.
 - I would like to thank our code reviewer and anyone else who participated in making this done.
 
 ## 📝 License
