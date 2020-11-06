@@ -1,6 +1,10 @@
 name: Tests
 
-on: pull_request
+on:
+  push:
+    branches: [ scraper ]
+  pull_request:
+    branches: [ scraper ]
 
 jobs:
   rspec:
@@ -11,13 +15,13 @@ jobs:
       - uses: actions/setup-ruby@v1
         with:
           ruby-version: 2.6.x
-      - name: Setup Bundler
-          run:  gem install bundler:2.1.4
-      - name: Setup nokogiri
-          run: gem install nokogiri
+      # - name: Setup Bundler
+      #     run:  gem install bundler:2.1.4
+      # - name: Setup nokogiri
+      #     run: gem install nokogiri
       - name: Setup RSpec
         run: |
           [ -f Gemfile ] && bundle --deployment
-          gem install --no-document rspec:'~>3.0'
+          gem install --no-document rspec:'~>3.0' && gem install nokogiri
       - name: RSpec Report
         run: rspec --force-color --format documentation

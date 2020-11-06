@@ -1,6 +1,9 @@
 name: Linters
-
-on: pull_request
+on:
+  push:
+    branches: [ scraper ]
+  pull_request:
+    branches: [ scraper ]
 
 jobs:
   rubocop:
