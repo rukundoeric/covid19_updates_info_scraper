@@ -16,14 +16,12 @@ This tool will help you to scrap covid19 updates information from [worldometers]
 
 - Clone this repo
 - Navigate to project directory.
-- if you are using Mac just type `setup` or if you are using Windows or Linux, just type `./setup.sh` to install the required gems
+- run `bundle install` to install all gems, and then`chmod 755 ./covid` to provide execution permission to `covid` file.
 - if the installation is complete and successful, just go ahead and follow the following instructions.
-  - to scrap data and save updated data, use the following command
-    - MacOS: `covid --update-informations` 
-    - Windows/Linux: `./covid --update-informations`
+  - to scrap data and save updated data, use the following command 
+    - Windows/Linux/MacOS: `./covid --update-informations`
   - to get information about specific country
-    - MacOS: `covid --info <country-name>` example: `covid --info rwanda` 
-    - Windows/Linux: `./covid --info <country-name>` example: `./covid --info rwanda` 
+    - Windows/Linux/MacOS: `./covid --info <country-name>` example: `./covid --info rwanda` 
     - this should return something look like this
     ```
     [
@@ -51,11 +49,9 @@ This tool will help you to scrap covid19 updates information from [worldometers]
     ]
     ``` 
   - to get all information about all countries
-    - MacOS: `covid --list`
-    - Windows/Linux: `./covid --list`
+    - Windows/Linux/MacOS: `./covid --list`
   - to learn more about how to use the application
-    - MacOS: `covid --help`
-    - Windows/Linux: `./covid --help`
+    - Windows/Linux/MacOS: `./covid --help`
 
 ## Authors
 
@@ -82,4 +78,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](./LICENCE) licensed.
+This project is [MIT](https://github.com/rukundoeric/covid19_updates_info_scraper/blob/scraper/LICENSE) licensed.

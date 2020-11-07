@@ -1,5 +1,3 @@
-#!/usr/bin/env ruby
-
 require 'nokogiri'
 require 'open-uri'
 require 'net/http'
@@ -31,7 +29,6 @@ class Scraper
     @data = collect_data
     self
   rescue StandardError => e
-    puts e
     e
   end
 

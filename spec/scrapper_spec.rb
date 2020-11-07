@@ -22,7 +22,7 @@ RSpec.describe Scraper do
   describe '#Scrap' do
     it 'should scrap the data, set data in the state of the class and return its instance' do
       res = scraper
-        .set_url('spec/mocks/index.html')
+        .set_url(page_url)
         .set_output_filename(output_filename)
         .scrap
 
@@ -34,7 +34,7 @@ RSpec.describe Scraper do
   describe '#Save' do
     it 'should save the data in file' do
       res = scraper
-        .set_url('spec/mocks/index.html')
+        .set_url(page_url)
         .set_output_filename(output_filename)
         .scrap
         .save
